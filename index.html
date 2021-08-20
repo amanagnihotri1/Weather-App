@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.iphonefaq.org/files/styles/large/public/ios-weather.jpg?itok=7ugiciWv" type="image/png">
+    <title>Weather App</title>
+  <style>
+    body
+    { 
+      box-sizing:border-box;
+    }
+    .logo
+    {
+      width: 50vw;
+      height: 80vh;
+    }
+    
+    .inp
+    {
+      text-align: center;
+      width: 55vw;
+      height: 100vh;
+    }
+    .weather
+    {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+    }
+    .weather .m1
+    {
+      opacity: 1;
+    }
+  </style>
+  </head>
+<body id="main1" style="display:flex; overflow: hidden;">
+  <div class="logo" >
+  <img class="weather" style="opacity: 1;" src="https://cdn.freebiesupply.com/images/thumbs/2x/weather-n56.png">
+  </div>
+  <div class="inp">
+  <h1 style="color: Blue;font-size: 80px; font-family: 'Noto Sans TC', sans-serif;">Weather App</h1>
+  <form action="/" method="post">
+  <input type="text" name="area"  placeholder="Enter Location " style=" width: 380px; height: 30px;text-align: center; font-family: 'Noto Sans YC',sans-serif; font-size: 30px;">
+  <button type="submit" style="font-size: 20px; font-family: 'Noto Sans TC', sans-serif;" >SUBMIT</button> 
+  </form>
+  </div> 
+   <script src="index.js"></script>
+</body>
+</html>
